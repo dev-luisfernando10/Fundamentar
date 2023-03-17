@@ -1,0 +1,30 @@
+nessa aula vamos aprender sobre o ambiente dev
+
+ferramentas basicas
+
+-Computador
+-Editor de texto
+    -visual studio code 
+    -sublime
+-Navegador
+    -Chrome
+    -Edge
+    -Firefox
+    -Safari
+
+Editores Online 
+-CodePen
+-Front-End
+
+
+
+Ent O resto da aula ele explica em 7 videos como 
+
+(windows)Instalar o Edge 
+(windows)instalar o VsCode 
+(windows) Instalar o NodeJS 
+(linux) e Instalar o Edge
+(linux)Instalar o VSCode 
+(linux) Instalar o NodeJs
+(mac) Instalar o VSCode
+(mac) Instalar o Chrome 
