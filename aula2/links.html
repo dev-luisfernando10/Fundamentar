@@ -1,0 +1,118 @@
+<!--
+    HyperLinks - Elementos Ancora: <a>
+
+    +Anatomia
+
+    +Atributos:
+        -Globais   
+        -href
+            -para onde iremos, quando clicarmos no link?
+                -url completo
+                -fragmento
+                -email
+                -telefone
+                - e outros
+        -download
+        -target
+            -_self (padrao)
+            -_blank
+-->
+
+Anatomia Basica:
+
+<a href=""></a>
+
+href e  a URL que leva a gente ate o link (URL completa)
+
+o _blank abrira uma nova aba nao saindo da pagina atual 
+
+o _self e o normal
+
+Ex:
+
+<ul>
+    <li><a href="#about"></a></li>
+</ul>
+
+
+<h1 id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit earum aut natus, ipsum perferendis unde tempora quibusdam, sapiente fuga ab obcaecati, delectus impedit. Sunt quasi exercitationem totam qui nobis iusto!</h1>
+
+
+Ao colocarmos uma # atras da pagina a qual queremos enviarmos e colocarmos o ID sobre a pagina 
+
+
+<!--
+    Conteudo dos hyperlinks
+
+    -qualquer conteudo
+-->
+
+<a href="http://google.com" title="Ir para google"> 
+    <h1>Google</h1>
+    <p>Claro que posso</p>
+    <img src="https://source.unsplhas.com/random" alt="">
+</a>
+
+
+<!--
+    URLs e Caminhos dos arquivos
+
+
+    -Uniform Resource Locator
+        -https://www.rocketseat.com.br
+        -Sequencia de texto que define onde algo esta localizado na web
+    -URL usam caminhos para encontrar arquivos
+
+    -Caminhos dos arquivos
+        -Onde, no explorador de arquivos, um recurso esta localizado
+
+-->
+
+
+<!-- Como Navegar pelos caminhos
+
+    -mesmo diretorio
+    -entrando em diretorios
+    -saindo de diretorios
+    -diretorio raiz(root ou Pai)
+-->
+
+<a href="hyperlinks.html ">Arquivo na mesma pasta</a>
+
+<a href="aula2/diretorio/exemplo.txt">Arquivo na Pasta diretorio</a>
+
+
+<a href="../aula2/links.html">Arquivo no diretorio raiz</a>
+<a href="links.html">arquivo na mesma pasta</a>
+
+<!-- esses dois ultimos sao a mesma coisa-->
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+
+
+<!--
+    URLs absolutos versus relativos
+
+    -Absolutos
+        -inclui protocolo e nome de dominio
+            - https://www.rocketseat.com.br/projeto/index.html
+        -Sempre apontara para o mesmo local, pois e absoluto
+        
+        
+    -Relativos 
+        -relativo a pagina aberta no momento 
+        -apontara para lugares diferentes
+
+-->
+
+<a href="google.com">Ir para O Google Relativo</a> Sera relativo pois ele esta usando a minha pasta para achar o google
+
+<a href="https://google.com">Ir para o Google Absoluto</a> o absoluto achara o site fora da pasta e nunca mudara o trajeto seja ele estando em pasta ou nao
+
+Exercicio:

@@ -1,0 +1,107 @@
+<!--
+    <table>
+
+    Pros
+    -Visualizaçao de dados via linhas e colunas.
+
+    -Boa Acessibilidade para leitura dos dados
+
+
+    Contras
+    -Pouco Flexivel
+    -precisa de estilizaçao para melhor visualizaçao
+
+    Nao usar
+    - para criar seu layout
+-->
+
+cabeçalho = Thead 
+
+parte do corpo = tbody(levando todos os dados)
+
+rodape = tfoot(total ou Somatoria do Table)
+
+caption ira descrever oque sua tabaela faz("titulo")
+
+
+tr = linha
+
+th = cabeçalho(fica dentro do thead)
+
+td = descriçao das colunas
+
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    <tr>
+        <td>Luis</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>Robertin</td>
+        <td>76</td>
+    </tr>
+</table>
+
+<!--    
+    A tabela vai Ser Sobre:
+        2 Lojas
+            Quantos Produtos foram produzidos, quantos vendidos e agrupado por nome dos produtos
+-->
+
+<table>
+    <caption> Produzidos Vs Vendidos Por Loja</caption>
+
+    <colgroup >
+        <col>
+        <col span="2" style="background-color: rgb(201, 72, 72);">
+        <col span="2" style="background-color: rgb(76, 117, 194);">
+    </colgroup>
+
+    <thead>
+        <tr>
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Loja 1</th>
+        <th colspan="2" scope="colgroup">Loja 2</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Baldes</th>
+            <th>10</th>
+            <th>10</th>
+            <th>30</th>
+            <th>25</th>
+        </tr>
+    </tbody>
+
+</table>
+
+
+
+
+
+
+
+
+
+</Table>
