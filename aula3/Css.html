@@ -1,0 +1,274 @@
+Vamos ver o fundamentos do css e como deixar nosso site ainda mais bonito e como funciona a escrita , cascata , box model, e mt mais 
+
+<!--Introduçao
+
+o que significa CSS ?
+
+*Cascading Style Sheet
+*Codigo para criar estilos no html
+*HTML e a estrutura, e o css e a beleza
+*nao e uma linguagem de programaçao
+*e uma lungugagem Style sheet-->
+
+<!-- COmentarios
+
+-nao ira afetar o seu codigo
+-ajuda a lembrar bloco de codigos
+-deixa dicas para leitura
+-ajuda outros a entederem
+-Nunca esqueca de fechar um comentario aberto-->
+
+
+
+Comentarios começam com /* e terminam com */
+
+Ex: 
+
+/*"codigo"*/
+
+<!-- anatomia do css -->
+<style>
+/*<h1>exemplozin</h1>*/
+
+
+
+    
+ /*h1* Seletor*/
+/*Declaraçao  color:Propriedades blue;Valores
+font-size:Propriedades       60px;Valores
+background:Propriedades      gray;Valores
+Declarao
+*/
+</style>
+
+
+Seletor
+Declaraçao 
+Propriedades 
+e Valores 
+
+Seletores conecta um elemento HTML com o CSS 
+
+Global Seletor '*'
+seletor de tipo/elemento 'h1, h2, p , div'
+
+seletor de ID '.red , .m4'
+
+Existe mais seletores como os de atributos , pseudo-class , pseudo-element , entre outros
+
+<h1>Exemplo</h1>
+<p>Descriçao</p>
+<button>Embarcar</button>
+
+<style>
+h1 {
+    border: 1px solid red;
+    margin: 20px;
+    padding: 60px;
+}
+
+/*border = bordas 
+margin = margem
+padding = preenchimento*/
+
+
+</style>
+
+<!-- Caixas
+
+-Voce ira perceber que (quase) tudo sao caixas do CSS
+-Posicionamentos , tamanhos, espaçamentos , bordas, cores
+-caixas pode ficar ao lado uma da outra ou acima 
+-elemento html sao caixas-->
+
+Como adicionar o css num arquivo css em 4 formas: 
+
+1-Inline 
+*Atributo'style'
+
+2- <style></style>
+*tag html que ira conter o css 
+
+3-  <!--<link>-->
+* arquivo css externo
+
+4-@aimport 
+*arquivo css externo 
+
+A cascata (cascading)
+
+A escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento 
+
+*seu estilo e lido de cima para baixo 
+
+e levado em consideraçao 3 fatores 
+
+1.Origem do estilo 
+2.especificidade 
+3.importancia 
+
+<!-- Origem do estilo 
+
+Inline -> tag style -> tag link
+-->
+
+especificidade
+
+e um calculo matematico ,onde,cada tipo de seletor e origem do estilo, possuem valores a serem cosiderados 
+
+0. Universal selector , combinators e negation pseudo-class (:not())
+
+1 - element type selector e pseudo-elements (::before, ::after)
+
+10- Classes e atribute selectors ([type="radio"])
+
+100-ID selector 
+
+1000-inline 
+
+
+niveis de forças de css 
+
+1 - style dentro da tag 
+
+2- style no html 
+
+3 - qualquer style que esta abaixo dos ultimos style 
+
+4- o primeiro style em css 
+
+<!--Ex: 
+
+1- <h1 style=color:>
+    
+2- <style>h1 {
+    color:
+    } </style>
+
+4- h1 {
+    color green
+}
+3- h1 {
+    color red(esse e mais forte que o de cima)
+}-->
+
+
+
+A regra important
+
+o Important rouba toda a força de td nao importa o quando vc colocar ao oposto do que voce quer , se voce tiver com um comando com important qualquer regra aplicada do css ou html sao anuladas 
+
+nao usar important 
+
+Oque eu entendi :
+
+Quando usado o Important , ja que ele rouba valores , ele tem o valor de 1 mas deixa os outros valores que estao competindo com ele junto com as regras em 0
+
+<!-- At-Rules
+
+*Esta relacionado ao comportamento do CSS 
+*Começa com o sinal de '@' seguido do indentificador e valor 
+
+Exemplos: 
+
+-@import(importar) Incluir um CSS externo
+
+-@media(largura de dispositivos)  Regras condicionais para dispositivos 
+
+-@font-face fontes externas
+
+-@keyframes animaçoes-->
+
+ShortHand
+
+-junçao de propriedades 
+-resumido 
+-legivel
+
+Css: 
+
+
+    <!--Background Properties -->
+
+
+
+    background-color: #000;
+
+    background-image: Url(images/bg.gif);
+
+    background-repeat: no-repeat;
+
+    background-position: left top;
+
+    <!--Background Shorthand-->
+    
+    Background: #000 url(images/bg.gif) no-repeat  left top;
+
+    <!-- Font Properties-->
+    font-style: italic;
+
+    font-weight:bold;
+
+    font-size: .8em;
+
+    line-height: 1.2;
+
+    font-family:Arial, Sans-serif;
+
+    <!-- Font Shorthand-->
+
+    font: italic bold .8em/1.2 Arial, sans-serif;
+
+    <!--Detalhes:-->
+
+    *Ele Nao considerara propriedades anteriores 
+
+    *valores nao especificados irao assumir o valor padrao 
+
+    *geralmente, a ordem descrita nao importa,mas , se houver muitas propriedades com valores semelhantes , poderemos encontrar problemas
+
+    Site para propriedades que aceitam shorthand 
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+
+
+    Funçoes: 
+
+    Nome Seguido de abre e fecha parentesis 
+
+    Recebe Argumentos 
+
+    Ex> 
+
+    @import url("http://SiteExemplo.com")
+
+    {
+    color: rgb(255, 0, 100);
+    width: calc(100% - 10px);
+    }
+
+
+<!--
+    <style>
+        .element {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align:center;
+        }
+
+
+
+    </style>
+
+    Isso daqui eu estava testando extensao , Ignore 
+
+
+-->
+
+Obs:A extensao que ele usa para as cores aparecerem na palavra e Colorize
+
+
+    
+
+
+
