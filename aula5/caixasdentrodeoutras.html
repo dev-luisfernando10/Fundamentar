@@ -1,0 +1,166 @@
+Vamos aprender Sobre Box Model , preencimentos , inline, e mt mais 
+
+Box Model 
+
+-Fundamental para fazer Layouts para a web
+-Maior facilidade para aplicar o css 
+
+O que e? 
+
+Uma Caixa retangular 
+Essa caixa possui propriedades de uma caixa (2d)
+
+-tamano(largura x altura)       widht x  height 
+
+-conteudo                       Content
+
+-bordas                         border 
+
+-preencimento interno           padding
+
+-espaço fora da  caixa          margin 
+
+*Cada elemento an sua pagina , Sera considerado uma caixa 
+
+
+Box-sizing 
+
+Como sera calculado o tamanho total da caixa? 
+
+-content-box/border-box 
+
+'''css 
+div {
+    box-sizing:border-box:
+}
+''' 
+
+margen e o espaço Fora da caixa 
+
+border e a borda 
+
+padding  e o preenchimento 
+
+e dentro da caixa vem o conteudo 
+
+Um Exemplo de caixa e esse abaixo! 
+
+div {
+    widht:100px ;
+    height:100px;
+    border 1px solid red;
+    margin:10%;
+    padding: 0 20px;
+
+    box-siging: border-box;
+}
+
+
+Display: block vs display:inline 
+-Como as caixas se comportam em relaçao as outras caixas 
+
+-comportamento externo das caixas 
+
+
+Block 
+
+--------------------------------
+Ocupa toda a linha, colocando o proximo elemento abaixo desse
+--------------------------------
+widht e height sao respeitados 
+--------------------------------
+Padding, margin, border irao funcionar normalmente 
+--------------------------------
+
+
+
+Inline 
+--------------------------------
+Elemento ao lado do outro
+--------------------------------
+widht e height nao funcionam
+--------------------------------
+somente valores horizontais de margin, padding e border 
+--------------------------------
+
+
+<!--Exemplos!
+
+Block: <p> <div> <section>, todos os heading "<h1><h2>...
+
+Inline: <a> <strong> <span <em>    
+
+"-->
+
+
+Margin 
+
+Espaços entreos elementos 
+
+-Margin-top / margin-right / margin-bottom / margin-left 
+
+-Values: Lenght / Percentagem / Auto 
+
+--Exemplos 
+
+'''css
+div {
+    /*shorthand */ 
+    margin: 12px 16px 10px 4px;
+    margin 12px 16px 0;
+    margin:8px 16px;
+    margin:8px
+}
+'''
+
+*Cuidado com margin collapsing (top se ajunta ao bottom)
+
+
+Padding 
+
+Preencimento interno da caixa 
+padding-top / padding-right / padding-bottom * padding-left 
+
+'''css
+div {
+    /* shorthand */
+    padding: 12px 16px 10px 4px;
+    padding:12px 16px 0;
+    padding:8px 16px;
+    padding:8px;
+}
+'''
+
+*Padding podera causar diferença na largura de um elemento 
+
+
+
+Border ( e outline)
+
+As bordas das caixas 
+-value; '<border-style>' / '<border-width>' / <border-color>
+
+-Style solid / dotted / dashed / double / groove / ridge / inset /outset 
+
+-widht 'length'
+
+-color: <color>
+
+'''css
+div {
+    shorthand 
+    border-top solid 2px (pode usar todas as variaçoes tambem! top/ bottom e left)
+
+    style
+    border: solid;
+
+    width <lenght> / style 
+        border:2px dotted; 
+
+    style / color 
+    border: outset #f33;
+
+    widht / style / color 
+    border:medium dashed green
+}
+'''

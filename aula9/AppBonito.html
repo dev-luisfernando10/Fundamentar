@@ -1,0 +1,151 @@
+Trabalhando com fontes 
+
+Tipografia transmite mensagem   
+
+    -negrito
+    -tamanho
+    -estilo
+
+---------------------------------
+
+Basic font properties 
+
+*font-family 
+*font-weight 
+*font-style 
+*font-size 
+---------------------------------
+Font Family 
+
+*Tipo de fonte de um elemento 
+*Lista de fontes e ordem de prioridade 
+*Inclui *Fallback* Font
+
+Ex: 
+<style>
+    p {
+    font-family: "times new roman", times, serif;
+}
+    /*-Serif 
+    -Sana */
+</style>
+
+Font Weight 
+
+*Peso da Fonte
+
+<style>
+    p {
+        font-weight: bold;
+    }
+</style>
+
+Font Style 
+*O Estilo da Fonte 
+<style>
+    span {
+        font-style: italic;
+    }
+</style>
+
+Font Size 
+
+O tamanho da fonte
+
+<style>
+    p {
+        font-size: 18px;
+    }
+</style>
+
+Web Fonts 
+
+-FOntes do sistema x fontes da web 
+-Como usar fontes para web 
+
+-@Font-face
+-@import 
+-Link
+
+Faz variações na apresentação da fonte
+p {
+	font-variant: small-caps;
+}
+
+
+Site para Novas Fontes:https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
+
+Define o espaçamento entre os caracteres
+p {
+	letter-spacing: 4px;
+}
+
+
+Link Para Saber Mais:https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+
+Define os espaços entre linhas
+Pode ser com unidades ou sem unidades de medida
+Valores comuns: 1.5 ou 2
+p {
+	line-height: 1.5;
+}
+
+
+Link Para Saber Mais:https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+Aparência decorativa de um texto
+
+line: underline / overline / line-through
+podemos aplicar mais de 1 valor
+
+style: wavy / dotted / double / dashed / solid
+
+color: <color> values
+
+    Exemplo:
+
+    <style>
+h1 {
+	text-decoration: underline; /* shorthand */
+}
+
+p {
+  text-decoration: wavy overline blue; /* shorthand */
+}
+</style>
+
+Link Para Saber Mais:https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+
+
+Alinhamento de um texto
+Valores: start / end / left / right /center / justify / match-parent
+
+Ex:
+<Style>
+
+p {
+
+	text-align: center;
+}
+</Style>
+
+Sombra aplicada a um texto
+Permite múltiplos valores
+
+Ex: 
+<style>
+p {
+    text-shadow: 1px 1px 1px red,
+	       2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */
+}
+</style>
+
+Podemos usar o shorthand font para determinar os seguintes valores:
+font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
+
+Ex:
+<style>
+p {
+font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+}
+</style>

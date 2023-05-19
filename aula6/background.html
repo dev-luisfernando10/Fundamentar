@@ -1,0 +1,39 @@
+## Background-color
+-Define um fundo para o nosso elemento 
+-Sua area de atuaçao e a caixa toda
+-por padrao, e transparente 
+
+Exemplos
+    -Usar cores solidas
+    -usar imagens
+    -COntrolar
+        -a posiçao das imagens, 
+        -se elas se repetem ou nao
+        - o tamanho delas na caixa
+    -Usar cor e imagem juntas
+    -usar cor gradiente
+
+Exemplo de Box:
+<style>
+    header {
+        height: 100px;
+        border: 7px dashed red;
+
+        background-color: aqua;
+        background-image: url(ExemploDeURLparafoto.com);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; 
+        /*contain = a imagem fica dentro da caixa 
+        
+        cover = cobrira toda a caixa com a imagem */
+        background-origin: border-box;
+        background-clip: border-box;
+
+        /*O background seria o Shorthand que sempre voce podera agrupar seus codigos 
+        Ex: */
+        background:linear-gradient(red, yellow) ,aqua url(ExemploDeURLparafoto.com) no-repeat center / contain border-box border-box scroll;
+
+
+    }
+</style>

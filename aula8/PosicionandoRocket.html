@@ -1,0 +1,88 @@
+Page Layouts 
+
+-Table
+-Floats e clear 
+-Frameworks e Grid Systems
+-Flexbox
+-Grid
+
+Posicionamentos
+
+Controlar onde, na pagina, o elemento ira ficar, alterando o fluixo normal dos elementos. 
+
+-Name:position-Value:static/relative/absolute/fixed
+
+
+Relative 
+
+-top, right, bottom, left, z-index 
+
+Absolute
+
+fixed
+
+Element Stacking
+
+Flex Box 
+
+-Nos permite posicionar os elementos dentro da caixa 
+-Controle em uma dimensao(horizontal ou vertical)
+-Alinhamento, direcionamento, rodenar e tamanhos 
+
+Ex:
+
+<style>
+    div.parent {
+        display: flex;
+    }
+</style>
+
+Flex direction 
+
+Qual a direçao do flex: horizontal ou vertical 
+row / column 
+
+Alinhamento 
+
+*Justify-content 
+*align-items
+
+
+Grid 
+*Posicionamento dos elementos dentro da caixa 
+*Posicionamento horizontal e vertical ao mesmo tempo 
+*pode ser flexivel ou fixo 
+*cria espaços para os elementos filhos habitarem 
+
+
+Exemplo Geral: 
+
+<style>
+    body {
+        margin:0;
+        height: 100vh;
+
+        display:grid;
+        grid-template-areas: 
+        "header header"
+        "main aside"
+        "Footer Footer";
+
+        grid-template-rows: 30px 1fr 40px;
+        grid-template-columns: 1fr 80px;
+    }
+    header{
+        grid-area: header;
+        background-color: green;
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 8px;
+    }
+    main {
+        grid-area:main;
+        background-color:red
+    }
+</style>
